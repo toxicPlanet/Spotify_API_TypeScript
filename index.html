@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Spotify Web API</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header class="sidebar">
+        <div id="login" class="active">
+            <form action="" id="login-form" class="login-form">
+                <div class="login-form">
+                    <label for="client-id">Enter your client ID :</label>
+                    <input type="text" name="client-id" id="client-id-input" required>
+                </div>
+                <div class="login-form">
+                    <label for="client-secret">Enter your client secret :</label>
+                    <input type="password" name="client-secret" id="client-secret-input" required>
+                </div>
+                <div class="login-form">
+                    <input type="submit" id="login-submit-button" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="inactive" id="display-token"></div>
+
+        <div class="inactive" id="requests">
+            <form action="" id="request">
+                <div>
+                    <label for="search">Search : </label><br>
+                    <input type="text" name="search" id="search">
+                </div>
+                <div>
+                    <input type="radio" name="type-of-searched-item" id="artist" class="search-type-radio" checked>
+                    <label for="artist">Artist</label>
+                </div>
+                <div>
+                    <input type="radio" name="type-of-searched-item" id="album" class="search-type-radio">
+                    <label for="album">Album</label>
+                </div>
+                <div>
+                    <input type="radio" name="type-of-searched-item" id="track" class="search-type-radio">
+                    <label for="track">Track</label>
+                </div>
+                <input type="submit" id="search-submit-button" value="Search">
+            </form>
+        </div>
+    </header>
+
+
+
+    <div id="requests-results"></div>
+    <div id="track-requests-results"></div>
+
+    <script src="/credentials.js"></script>
+    <script src="/app2.js"></script>
+</body>
+
+</html>
