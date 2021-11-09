@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    background-color: rgb(0, 208, 59);
+}
+
+header .active {
+    display: block;
+}
+
+header .inactive {
+    display: none;
+}
+
+#login-form * {
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    padding: 2px;
+}
+
+#display-token {
+    overflow-wrap: break-word;
+}
+
+#search {
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+#search-submit-button {
+    margin-top: 10px;
+}
+
+#requests-results {
+    margin-left: 290px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#track-requests-results {
+    margin-left: 290px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search-response-item {
+    width: 170px;
+    height: 260px;
+    margin: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.track-request-response-item {
+    height: 40px;
+    margin: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.track-request-response-item * {
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.track-request-response-item img {
+    max-width: 30px;
+    margin-left: 10px;
+}
+
+.track-request-response-item span {
+    margin-left: 10px;
+}
+
+.search-response-item:hover,
+.track-request-response-item:hover {
+    background-color: rgb(157, 157, 157);
+}
+
+.album-title,
+.album-artist,
+.artist {
+    text-overflow: ellipsis;
+}
+
+.search-response-item img {
+    padding: 10px;
+    max-width: 150px;
+}
